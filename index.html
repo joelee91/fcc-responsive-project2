@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <h1 id="title">Survey Form</h1>
+  <h1 id="title">Restaurant Survey Form</h1>
   <div class="main-container">
     <p id="description">If you have time, please let us know how we can improve</p>
     <form id="survey-form">
@@ -27,10 +27,10 @@
         <input class="user-input" type="email" placeholder="Enter your email" name="email" id="email" required>
       </div>
       <div class="labels-container">
-        <label id="number-label" class="labels" for="number">How old are you:</label>
+        <label id="number-label" class="labels" for="number">How many people were in your party:</label>
       </div>
       <div class="input-container">
-        <input class="user-input" type="number" min="1" max="100" placeholder="Enter your age" name="number" id="number"
+        <input class="user-input" type="number" min="1" max="8" placeholder="Enter your party size" name="number" id="number"
           required>
       </div>
       <div class="labels-container">
@@ -47,10 +47,62 @@
       <div class="labels-container">
         How likely are you to visit again?
       </div>
-      <div class="radio-label">
-        <label for="very-unlikely">Very Unlikely</label>
-        <input id="very-unlikely" type="radio">
+      <div class="radio">
+        <label class="radio-label" for="very-unlikely">Very Unlikely</label>
+        <input id="very-unlikely" type="radio" name="radio-likely" value="very-unlikely">
       </div>
+      <div class="radio">
+        <label class="radio-label" for="unlikely">Unlikely</label>
+        <input id="unlikely" type="radio" name="radio-likely" value="unlikely">
+      </div>
+      <div class="radio">
+        <label class="radio-label" for="likely">Likely</label>
+        <input id="likely" type="radio" name="radio-likely" value="likely">
+      </div>
+      <div class="radio">
+        <label class="radio-label" for="very-likely">Very Likely</label>
+        <input id="very-likely" type="radio" name="radio-likely" value="very-likely">
+      </div>
+      <div class="labels-container">
+        What can we improve on for the future?
+      </div>
+      <div class="checkbox">
+        <label>
+          Customer-Service
+          <input name="improve" type="checkbox" value="1">
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          Menu Size
+          <input name="improve" type="checkbox" value="2">
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          Food-Cleanliness
+          <input name="improve" type="checkbox" value="3">
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          Quick-Service
+          <input name="improve" type="checkbox" value="4">
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          Store-Cleanliness
+          <input name="improve" type="checkbox" value="5">
+        </label>
+      </div>
+      <div class="labels-container">
+        <label for="comment">Feel free to leave other comments or suggestions:</label>
+      </div>
+      <div>
+        <textarea id="comment" name="comment" placeholder="Enter comments/suggestions here"></textarea>
+      </div>
+      <button id="submit" type="submit">Submit Form</button>
     </form>
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
