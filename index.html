@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive-Project2</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="main-container">
+    <p id="description">If you have time, please let us know how we can improve</p>
+    <form id="survey-form">
+      <div class="labels-container">
+        <label id="name-label" class="labels" for="name">What is your first and last name:</label>
+      </div>
+      <div class="input-container">
+        <input class="user-input" type="text" placeholder="Enter your name" name="name" id="name" required>
+      </div>
+      <div class="labels-container">
+        <label id="email-label" class="labels" for="email">What is your email:</label>
+      </div>
+      <div class="input-container">
+        <input class="user-input" type="email" placeholder="Enter your email" name="email" id="email" required>
+      </div>
+      <div class="labels-container">
+        <label id="number-label" class="labels" for="number">How old are you:</label>
+      </div>
+      <div class="input-container">
+        <input class="user-input" type="number" min="1" max="100" placeholder="Enter your age" name="number" id="number"
+          required>
+      </div>
+      <div class="labels-container">
+        <label for="rating">How would you rate your experience?</label>
+      </div>
+      <div class="input-container">
+        <select id="dropdown" class="user-input" name="rating">
+          <option value="extremely-satisfactory">Extremely Satisfactory</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="unsatisfactory">Unsatisfactory</option>
+          <option value="extremely-unsatisfactory">Extremely Unsatisfactory</option>
+        </select>
+      </div>
+      <div class="labels-container">
+        How likely are you to visit again?
+      </div>
+      <div class="radio-label">
+        <label for="very-unlikely">Very Unlikely</label>
+        <input id="very-unlikely" type="radio">
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
